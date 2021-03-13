@@ -14,7 +14,7 @@
     </parent>
     <groupId>maruthi.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>sfg-pet-clinic</name>
     <description>SFG Pet Clinic Project</description>
     <properties>
@@ -44,13 +44,14 @@
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:nairrekha03/sfg-pet-clinic.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>sfg-pet-clinic-0.0.2</tag>
     </scm>
 
 </project>
