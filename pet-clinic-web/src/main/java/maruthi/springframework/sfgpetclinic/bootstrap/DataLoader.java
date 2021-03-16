@@ -4,8 +4,7 @@ import maruthi.springframework.sfgpetclinic.model.Owner;
 import maruthi.springframework.sfgpetclinic.model.Vet;
 import maruthi.springframework.sfgpetclinic.services.OwnerService;
 import maruthi.springframework.sfgpetclinic.services.VetService;
-import maruthi.springframework.sfgpetclinic.services.map.OwnerServiceMap;
-import maruthi.springframework.sfgpetclinic.services.map.VetServiceMap;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -53,5 +52,6 @@ public class DataLoader implements CommandLineRunner {
         vetService.save(vet2);
 
         System.out.println("Loaded Vets .......");
+        System.out.println("number of vets: " + vetService.findAll().size());
     }
 }

@@ -1,8 +1,6 @@
 package maruthi.springframework.sfgpetclinic.services.map;
 
-import maruthi.springframework.sfgpetclinic.model.Owner;
 import maruthi.springframework.sfgpetclinic.model.Vet;
-import maruthi.springframework.sfgpetclinic.services.CrudService;
 import maruthi.springframework.sfgpetclinic.services.VetService;
 import org.springframework.stereotype.Service;
 
