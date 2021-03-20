@@ -1,14 +1,16 @@
 package maruthi.springframework.sfgpetclinic.services.map;
 
-import maruthi.springframework.sfgpetclinic.model.Owner;
 import maruthi.springframework.sfgpetclinic.model.Pet;
 import maruthi.springframework.sfgpetclinic.services.CrudService;
+import maruthi.springframework.sfgpetclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+//@Profile({"default", "map"})
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
